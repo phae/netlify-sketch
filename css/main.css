@@ -1,0 +1,78 @@
+.sketchy{ /* A throw-away class for making notes in the wireframe */
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color:red;
+	background-color:yellow;
+	font-size:12px;
+}
+body{
+	margin:0;
+	padding:0;
+}
+ul, li{
+	border:0;
+	margin:0;
+	list-style-type:none;
+}
+h1{
+	color: #3ab7a5;
+    border-bottom: 1px solid #3ab7a5;
+    margin: 30px 30px 25px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+.workflow{
+	background-color:#fff;
+	padding:20px;
+}
+.workflow li.col{
+	display:inline-block;
+	width:33%;
+	text-align:left;
+	vertical-align: top;
+}
+.workflow li.col h2{
+	margin:0;
+	padding:0 0 20px 20px;
+}
+.search{
+	background-color:#272e30;
+	width:100%;
+	color:#fff;
+	border-bottom:2px solid #3ab7a5;
+}
+.search input{
+	padding:5px;
+	margin:5px;
+}
+
+
+.cards li{
+	display:inline-block;
+	border:1px solid #999;
+
+}
+.editor,
+.secondary{
+	width:50%;
+	float:left;
+}
+
+li.draft ul li,
+li.review ul li,
+li.publish ul li{
+	border:1px solid #000;
+	border-left:5px solid #fff;
+	list-style-type:none;
+	padding:10px;
+	margin:0;
+	margin-bottom:12px;
+}
+li.draft ul li{
+	border-color:#FC5B86;
+}
+li.review ul li{
+	border-color:#FF7900;
+}
+li.publish ul li{
+	border-color:#22D3AE;
+}
