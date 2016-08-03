@@ -8,44 +8,79 @@
     <title>CMS</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <script>
+    if (window.location.search.indexOf('?view=nocomments') === 0)
+        document.write('<style>.sketchy{display:none;}</style>');
+    </script>
   </head>
 
 
   <body>
-  <div class="search"><input type="search" placeholder="Search for post" /></div>
+  <div class="search"><a href="index.html">home</a> <input type="search" placeholder="Search for post" /></div>
   <h1>Dashboard <span class="sketchy">this is the user landing page</span></h1>
   <ul class="workflow">
     <li class="col draft">
       <h2>Drafts <a href="edit.html">Add new +</a></h2>
         <ul>
-        <li><a href="edit.html">A title by Someone</a></li>
-        <li><a href="edit.html">A title by Someone</a></li>
-        <li><a href="edit.html">A title by Someone</a></li>
-        <li><a href="edit.html">A title by Someone</a></li>
+        <li><a href="edit.html">Optimizing Critical-Path Performance With Express Server And Handlebars</a> by Filip Bartos
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p class="notes-made">Notes: 2</p>
+        </li>
+        <li><a href="edit.html">How To Create A Responsive 8-Bit Drum Machine Using Web Audio, SVG And Multitouch</a> by David Rousset
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p class="notes-made">Notes: 0</p>
+        </li>
+        <li><a href="edit.html">Using A Static Site Generator At Scale: Lessons Learned</a> by Stefan Baumgartner
+        <p>Last updated: 2nd August 2016 by Càssio Zen</p>
+        <p class="notes-made">Notes: 1</p>
+        </li>
+        <li><a href="edit.html">User Memory Design: How To Design For Experiences That Last</a> by Curt Arledge
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p><p class="notes-made">Notes: 2</p>
+        </li>
         </ul>
     </li>
     <li class="col review">
       <h2>Waiting for Review</h2>
         <ul>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
+        <li><a href="review.html">An Introduction To Redux</a> by Filip Bartos
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p>Assigned reviewer: Frances Berriman <span class="sketchy">click to change an assignment</span></p>
+        <p class="notes-made">Notes: 2</p></li>
+        <li>Stylelint: The Style Sheet Linter We’ve Always Wanted by David Rousset
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p>Assigned reviewer: Unassigned <span class="sketchy">click to assign someone</span></p>
+        <p class="notes-made">Notes: 2</p></li>
+        <li>Looking Back: One Year Of Microsoft Edge (Videos) by Stefan Baumgartner
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p>Assigned reviewer: Unassigned</p>
+        <p class="notes-made">Notes: 2</p></li>
+        <li>Why You Should Stop Installing Your WebDev Environment Locally by Curt Arledge
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p>Assigned reviewer: Assigned</p>
+        <p class="notes-made">Notes: 2</p></li>
+        <li>Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of by Filip Bartos
+        <p>Last updated: 2nd August 2016 by Càssio Zen</p>
+        <p>Assigned reviewer: Frances Berriman</p>
+        <p class="notes-made">Notes: 2</p></li>
         </ul>
     </li>
     <li class="col publish">
       <h2>Waiting to go live</h2>
       <ul>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
-        <li>A title by Someone</li>
+        <li>Building A Real-Time Retrospective Board With Video Chat by Filip Bartos
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p>Assigned publisher: Frances Berriman</p></li>
+        <li>Building A First-Class App That Leverages Your Website: A Case Study by David Rousset
+        <p>Last updated: 2nd August 2016 by Càssio Zen</p>
+        <p>Assigned publisher: Frances Berriman</p></li>
+        <li>Making A Service Worker: A Case Study by Stefan Baumgartner
+        <p>Last updated: 2nd August 2016 by Filip Bartos</p>
+        <p>Assigned publisher: Unassigned</p></li>
       </ul>
 
   </ul>
 
+  <div class="older">
   <h2>Published <span class="sketchy">this is the current card view</span></h2>
   <p>View controls: <span class="sketchy">such as</span> List | Cards and Descending date | Ascending date | By user | By title</p>
     <ul class="cards">
@@ -62,7 +97,7 @@
       <li><h3>A title by Someone</h3>
       <img src="http://placekitten.com/300/150"></li>
     </ul> 
- 
+ </div>
   </body>
 
 </html>

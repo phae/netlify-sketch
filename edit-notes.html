@@ -8,35 +8,43 @@
     <title>CMS</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <script>
+    if (window.location.search.indexOf('?view=nocomments') === 0)
+        document.write('<style>.sketchy{display:none;}</style>');
+    </script>
   </head>
 
 
   <body>
-  <div class="search"><input type="search" placeholder="Search for post" /></div>
-  <h1>Edit</h1>
-  <div class="toolbar"><button>Save</button> <button>Request review</button></div>
+  <div class="search"><a href="index.html">home</a> <input type="search" placeholder="Search for post" /></div>
+  <div class="content">
+  <div class="toolbar">
+  <p><button>Save draft</button> </p>
+  <span class="sketchy">save should periodically be happening in the background, too.</span>
+  <p><input type="checkbox" /> Request review? <select><option>Pick someone</option></select></p>
+  <span class="sketchy">when happy with it, check that it's ready for review and assign.</span></div>
   <div class="editor">
+<p class="status"><span class="draft">Draft</span></p>
     <label>Edit</label>
     <textarea></textarea>
+    <span class="sketchy">basically this is the text editor</span>
   </div>
 
   <div class="secondary">
-  <ul>
+  <span class="sketchy">tab navigation for this side panel to show preview or notes</span>
+  <ul style="border-bottom:1px solid #999">
     <li>Notes</li>
-    <li><a href="edit.html">Preview</a></li>
+    <li> | <a href="edit.html">Preview</a> </li>
   </ul>
-  <ul class="comments">
-    <li>I think this is weird by Someone</li>
-    <li>I think this is weird by Someone</li>
-    <li>I think this is weird by Someone</li>
-    <li>I think this is weird by Someone</li>
-    <li>I think this is weird by Someone</li>
-  </ul>
-  <label>Add comment</label>
-  <textarea></textarea>
+  <p>Notes</p>
+      <p><span class="sketchy">this is an area for editors to discuss the content and give feedback / change suggestions. the author can leave comments here too as they work.</span></p>
+  <p><textarea>leave a comment</textarea> <button>submit</button>
+  <p><input type="checkbox" /> Request review? <select><option>Pick someone</option></select></p>
+  <span class="sketchy">when happy with it, check that it's ready for review and assign. should optionally leave a comment, too.</span>
   </div>
 
-  <div class="toolbar"><button>Save</button> <button>Request review</button></div>
+  <div class="toolbar"> <span class="sketchy">repeated controls for very long pages</span> <button>Save</button> <button>Request review</button></div>
+  </div>
   </body>
 
 </html>

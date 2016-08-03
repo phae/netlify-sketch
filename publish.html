@@ -8,11 +8,15 @@
     <title>CMS</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <script>
+    if (window.location.search.indexOf('?view=nocomments') === 0)
+        document.write('<style>.sketchy{display:none;}</style>');
+    </script>
   </head>
 
 
   <body>
-  <div class="search"><input type="search" placeholder="Search for post" /></div>
+  <div class="search"><a href="index.html">home</a> <input type="search" placeholder="Search for post" /></div>
   <h1>Edit</h1>
   <div class="toolbar"><button>Save</button> <button>Request review</button></div>
   <div class="editor">

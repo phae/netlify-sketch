@@ -8,27 +8,39 @@
     <title>CMS</title>
 
     <link rel="stylesheet" href="css/main.css">
+    <script>
+    if (window.location.search.indexOf('?view=nocomments') === 0)
+        document.write('<style>.sketchy{display:none;}</style>');
+    </script>
   </head>
 
 
   <body>
-  <div class="search"><input type="search" placeholder="Search for post" /></div>
-  <h1>Edit</h1>
-  <div class="toolbar"><button>Save</button> <button>Request review</button></div>
+  <div class="search"><a href="index.html">home</a> <input type="search" placeholder="Search for post" /></div>
+  <div class="content">
+  <div class="toolbar">
+  <p><button>Save draft</button> </p>
+  <span class="sketchy">save should periodically be happening in the background, too.</span>
+  </div>
   <div class="editor">
+<p class="status"><span class="draft">Draft</span></p>
     <label>Edit</label>
     <textarea></textarea>
+    <span class="sketchy">basically this is the text editor</span>
   </div>
 
   <div class="secondary">
-  <ul>
+  <span class="sketchy">tab navigation for this side panel to show preview or notes</span>
+  <ul style="border-bottom:1px solid #999">
     <li><a href="edit-notes.html">Notes</a></li>
-    <li>Preview</li>
+    <li> | Preview </li>
   </ul>
   <p>Preview area</p>
+      <p><span class="sketchy">paint a beautiful imaginary preview pane in your mind here</span></p>
   </div>
 
-  <div class="toolbar"><button>Save</button> <button>Request review</button></div>
+  <div class="toolbar"> <span class="sketchy">repeated controls for very long pages</span> <button>Save</button> <button>Request review</button></div>
+  </div>
   </body>
 
 </html>
